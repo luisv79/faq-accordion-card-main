@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+   font-size: 18px;
+   font-family: 'Kumbh Sans', sans-serif;
+  }
+
+
+
+  :root{
+
+    /* Primary */
+
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    /* Gradient */
+
+    /* Background gradient: */
+
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* Neutral */
+    
+
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+  }
+
+  .fondo-cuerpo{
+    background: var(--Soft-violet);
+    background: linear-gradient(180deg, var(--Soft-violet) 0%, var(--Soft-blue) 100%);
+    height: 768px;  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+  }
+
+  .cuadro{
+    background-color: #fff;
+    width: 330px;
+    height: fit-content;
+    border-radius: 25px;
+   position: relative; 
+    top: 150px;
+    
+  }
+
+  @media (min-width: 1440px){
+    .cuadro{
+      display: flex;
+      width: 920px;
+      background-image: url("/images/bg-pattern-desktop.svg");
+      background-position-x: -536px;
+      background-position-y: -281px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .section-1__imagen{
+    width: 240px;
+    margin: -108px 45px 0px;
+}
+
+@media (min-width: 1440px){
+  .section-1__imagen{
+    width: 470px;
+    margin: 80px -42px 0px;
+}
+
+.section-1, .section-2{
+  width: 100%;
+}
+
+}
+  
+
+.section-1__sombra img{
+    width: 240px;
+    margin: -80px 45px 1px;
+}
+
+@media (min-width: 1440px){
+  .section-1__sombra img{
+   display: none;
+}
+
+}
+
+
+
+.section-2{
+  padding: 0px 27px 40px 27px;
+}
+
+@media (min-width: 1440px){
+  .section-2{
+    padding: 120px 100px 60px 100px;
+  }
+
+}
+
+.section-2__cuerpo-acordion h1{
+    text-align: center;
+}
+
+@media (min-width: 1440px){
+  .section-2__cuerpo-acordion h1{
+    text-align: left;
+}
+
+}
+
+
+.acordion__label h4{
+  font-size: small;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.acordion__label h4:hover{
+  color: var(--Soft-red);
+}
+
+/* .acordion__label{
+position: relative;
+} */
+
+.section-2__acordion.activa .acordion__label h4{
+  font-weight: 700;
+}
+
+.section-2__acordion.activa .acordion__label__Texto{
+  display: block;
+}
+
+
+
+.section-2__acordion.activa .acordion__label__Titulo span{
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.acordion__label__Texto{
+  display: none;
+  transition: 0.5s;
+}
+
+.accordion {
+  transition: 0.4s;
+}
+
+
+
+
+
+.acordion__label p{
+  font-size: small;
+  margin-right: 30px;
+  
+}
+
+
+.linea{
+  border-width: thin;
+}
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
